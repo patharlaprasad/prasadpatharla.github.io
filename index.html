@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>prasad Patharla | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section id="about" class="container">
+    <img src="assests/mypic.jpg" alt="Prasad Patharla" class="profile-img" />
+    <h1>prasad Patharla</h1>
+    <p>Hello! I'm <span id="typed"></span></p>
+    <p>I have a strong interest in technology and am keen to learn about new advancements. I want to develop practical experience in the industry and lay a strong foundation for my future career. Welcome to my portfolio!</p>
+  </section>
+
+  <nav id="navbar">
+    <ul>
+      <li><a href="#skills" class="active">Skills</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#hackathons">Hackathons</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="stats" class="container">
+    <div class="stat">
+      <h3 id="project-count">0</h3>
+      <p>Projects Completed</p>
+    </div>
+    <div class="stat">
+      <h3 id="skill-count">0</h3>
+      <p>Skills Mastered</p>
+    </div>
+  </section>
+
+  <section id="skills" class="container">
+    <h2>Skills</h2>
+    <h3>Professional Skills</h3>
+    <div id="professional-skills" class="skills-list"></div>
+    <h3>Technical Skills</h3>
+    <div id="technical-skills" class="skills-list"></div>
+    <div class="skill-group" id="technical-skill-bars"></div>
+  </section>
+
+  <section id="certifications" class="container">
+    <h2>Certifications</h2>
+    <div id="certifications-list" class="certifications-list"></div>
+  </section>
+
+  <section id="hackathons" class="container">
+    <h2>Hackathons</h2>
+    <div id="hackathons-list" class="hackathons-list"></div>
+  </section>
+
+  <section id="projects" class="container">
+    <h2>Projects</h2>
+    <div class="project-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="ml">Machine Learning</button>
+      <button class="filter-btn" data-filter="web">Web Applications</button>
+      <button class="filter-btn" data-filter="data">Deeplearning & Data Analysis</button>
+    </div>
+    <div class="projects-list"></div>
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Contact</h2>
+    <form id="contact-form" class="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your email address" required />
+      <button type="submit">Submit</button>
+    </form>
+    <div class="contact-info">
+      <a href="https://www.linkedin.com/in/vara-prasad-355661256/"target="_blank" class="contact-item">
+        <img src="assests/linkedin-icon.png" alt="LinkedIn" class="contact-icon" />
+        LinkedIn: VaraPrasad
+      </a>
+      <a href="https://github.com/patharlaprasad" target="_blank" class="contact-item">
+        <img src="assests/github-icon.png" alt="GitHub" class="contact-icon" />
+        GitHub: patharlaprasad
+      </a>
+      <div class="contact-item">
+        <img src="assests/email-icon.jpg" alt="Email" class="contact-icon" />
+        Email: prasadpatharla55@gmail.com
+      </div>
+      <div class="contact-item">
+        <img src="assests/phone-icon.png" alt="Phone" class="contact-icon" />
+        Phone: +91 7032162889
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; <span id="year"></span> PrasadPatharla. All rights reserved.
+  </footer>
+
+  <button id="scrollTopBtn" title="Go to top">&#8679;</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
